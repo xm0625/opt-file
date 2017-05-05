@@ -1,16 +1,17 @@
-!  -----更新时间:  2017-5-1 22:57:21   by:xwhyc-----------------------------------------------
+!  -----更新时间:  2017-5-2 23:13:08   by:xwhyc-----------------------------------------------
 !  -----广告反馈:http://www.adbyby.com/help.htm   QQ群: 79547134(满), 364066294(满)，470705224，534897434,438394572--------------
-|http://www.5857.com/statics/v2/js/global.js$s@tyMap = window.tyMap@@
+
 
 
 !-------------------------------------------
-@@||ik123.com/js/a.js
-|http://c.dj123.org/img/$script
+
+
 
 
 !-----------------------
-ik123.com###aa960a,#ad960e
-5857.com###b_downfile
+
+
+
 
 !---------adbyby---------
 !|http://bbs.kafan.cn/$s@</head>@</head><script>document.cookie="r6pb_69df_widthauto=1;domain=kafan.cn";</script>@
