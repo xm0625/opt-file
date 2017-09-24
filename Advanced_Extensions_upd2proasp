@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--app3_ver=2017-9-2=-->
+<!--app3_ver=2017-9-24=-->
 <html>
 <head>
 <title><#Web_Title#> - upd2pro</title>
@@ -83,7 +83,7 @@ function button_updateupd2pro2(){
 	var $j = jQuery.noConflict();
 	$j.post('/apply.cgi',
 	{
-		'action_mode': ' updateapp4 ',
+		'action_mode': ' updateapp_3 ',
 	});
 }
 
