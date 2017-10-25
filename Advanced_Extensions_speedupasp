@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--app4_ver=2017-9-24=-->
+<!--app4_ver=2017-10-25=-->
 <html>
 <head>
 <title><#Web_Title#> - 家庭云提速</title>
@@ -185,6 +185,13 @@ function button_updatespeedup(){
                                             <th style="border: 0 none;">Start代码:</th>
                                             <td style="border: 0 none;">
                                                 <input type="text" maxlength="1024"  class="input" size="60" name="app_13" placeholder="curl -H 'SessionKey: ....." value="<% nvram_get_x("","app_13"); %>" onKeyPress="return is_string(this,event);" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th style="border: 0 none;">Heart代码:</th>
+                                            <td style="border: 0 none;">
+                                                <input type="text" maxlength="1024"  class="input" size="60" name="app_17" placeholder="curl -H 'SessionKey: ....." value="<% nvram_get_x("","app_17"); %>" onKeyPress="return is_string(this,event);" />
+                                                <div><span style="color:#888;">选填代码，Start后没提速可尝试填入</span></div>
                                             </td>
                                         </tr>
                                         <tr>
