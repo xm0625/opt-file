@@ -7,8 +7,6 @@ route del -net 100.100.100.100 netmask 255.255.255.255
 route del -net 188.188.188.188 netmask 255.255.255.255
 route del -net 110.110.110.110 netmask 255.255.255.255
 route del -net 104.160.185.171 netmask 255.255.255.255
-route del -net 162.208.51.14 netmask 255.255.255.255
-route del -net 213.183.53.47 netmask 255.255.255.255
 route del -net 1.0.1.0 netmask 255.255.255.0
 route del -net 1.0.2.0 netmask 255.255.254.0
 route del -net 1.0.8.0 netmask 255.255.248.0
@@ -1644,6 +1642,7 @@ route del -net 49.239.192.0 netmask 255.255.192.0
 route del -net 49.246.224.0 netmask 255.255.224.0
 route del -net 52.80.0.0 netmask 255.254.0.0
 route del -net 52.82.0.0 netmask 255.254.0.0
+route del -net 52.130.0.0 netmask 255.254.0.0
 route del -net 54.222.0.0 netmask 255.254.0.0
 route del -net 58.14.0.0 netmask 255.254.0.0
 route del -net 58.16.0.0 netmask 255.255.0.0
@@ -3212,7 +3211,6 @@ route del -net 103.79.28.0 netmask 255.255.252.0
 route del -net 103.79.36.0 netmask 255.255.252.0
 route del -net 103.79.40.0 netmask 255.255.252.0
 route del -net 103.79.44.0 netmask 255.255.252.0
-route del -net 103.79.52.0 netmask 255.255.252.0
 route del -net 103.79.56.0 netmask 255.255.252.0
 route del -net 103.79.60.0 netmask 255.255.252.0
 route del -net 103.79.64.0 netmask 255.255.252.0
@@ -3678,6 +3676,21 @@ route del -net 103.107.216.0 netmask 255.255.252.0
 route del -net 103.107.220.0 netmask 255.255.252.0
 route del -net 103.108.52.0 netmask 255.255.252.0
 route del -net 103.108.64.0 netmask 255.255.252.0
+route del -net 103.108.160.0 netmask 255.255.252.0
+route del -net 103.108.164.0 netmask 255.255.252.0
+route del -net 103.108.184.0 netmask 255.255.254.0
+route del -net 103.108.188.0 netmask 255.255.254.0
+route del -net 103.108.192.0 netmask 255.255.252.0
+route del -net 103.108.196.0 netmask 255.255.252.0
+route del -net 103.108.208.0 netmask 255.255.252.0
+route del -net 103.108.212.0 netmask 255.255.252.0
+route del -net 103.108.224.0 netmask 255.255.252.0
+route del -net 103.108.244.0 netmask 255.255.252.0
+route del -net 103.108.251.0 netmask 255.255.255.0
+route del -net 103.109.20.0 netmask 255.255.252.0
+route del -net 103.109.48.0 netmask 255.255.252.0
+route del -net 103.109.88.0 netmask 255.255.252.0
+route del -net 103.109.106.0 netmask 255.255.254.0
 route del -net 103.192.0.0 netmask 255.255.252.0
 route del -net 103.192.4.0 netmask 255.255.252.0
 route del -net 103.192.8.0 netmask 255.255.252.0
