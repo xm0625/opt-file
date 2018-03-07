@@ -175,7 +175,7 @@ function button_updatevirtualhere(){
                                             <td colspan="4" style="border-top: 0 none;">
                                                 <i class="icon-hand-right"></i> <a href="javascript:spoiler_toggle('script13')"><span>virtualhere配置文件</span><div>&nbsp;<span style="color:#888;">查看以下文件修改 配置参数。</span></div></a>
                                                 <div id="script13" >
-                                                    <textarea rows="15" wrap="off" spellcheck="false" maxlength="18192" class="span12" name="scripts.app_8.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.app_8.sh",""); %></textarea>
+                                                    <textarea rows="13" wrap="off" spellcheck="false" maxlength="18192" class="span12" name="scripts.app_8.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.app_8.sh",""); %></textarea>
                                                 </div>
                                             </td>
                                         </tr>
