@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# 2017-11-9 17:54:22
+# 2018-05-22
 # Copyright 2015 clowwindy
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may
@@ -68,7 +68,9 @@ def find_library(possible_lib_names, search_symbol, library_name):
             if path:
                 paths.append(path)
 
-    if not paths:
+    # always find lib on extend path that to avoid ```CDLL()``` failed on some strange linux environment
+    # in that case ```ctypes.util.find_library()``` have different find path from ```CDLL()```
+    if True:
         # We may get here when find_library fails because, for example,
         # the user does not have sufficient privileges to access those
         # tools underlying find_library on linux.
