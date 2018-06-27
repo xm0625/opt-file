@@ -179,7 +179,7 @@ function button_updatetransocks(){
 										<tr>
 											<th style="border-top: 0 none;">透明重定向的代理服务器IP、域名:</th>
 											<td style="border-top: 0 none;">
-												<input type="text" maxlength="15" class="input" size="15" name="app_30" placeholder="" value="<% nvram_get_x("","app_30"); %>"/>
+												<input type="text" maxlength="256" class="input" size="15" name="app_30" placeholder="" value="<% nvram_get_x("","app_30"); %>"/>
 												<span style="color:#888;"><div>若本地代理服务为本机的ss-local，</div><div>此处填入监听地址[192.168.123.1]</div></span>
 											</td>
 										</tr>
@@ -193,7 +193,7 @@ function button_updatetransocks(){
 										<tr>
 											<th style="border-top: 0 none;">远端服务器IP、域名:</th>
 											<td style="border-top: 0 none;">
-												<input type="text" maxlength="15" class="input" size="15" name="app_32" placeholder="" value="<% nvram_get_x("","app_32"); %>"/>
+												<input type="text" maxlength="256" class="input" size="15" name="app_32" placeholder="" value="<% nvram_get_x("","app_32"); %>"/>
 												<span style="color:#888;"><div>若本地代理ss-local连接远端SS服务器，</div><div>此处必须填入SS服务器IP、域名</div></span>
 											</td>
 										</tr>
