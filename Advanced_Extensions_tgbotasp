@@ -187,7 +187,7 @@ function button_updatetgbot(){
 										<tr id="app_53_tr" >
 											<th style="border: 0 none;">消息内容:</th>
 											<td style="border: 0 none;" colspan="3">
-											<textarea rows="3" wrap="off" spellcheck="false" maxlength="65536" class="span12" name="app_53" placeholder="消息内容, 支持 MarkDown" value="<% nvram_get_x("","app_53"); %>" onKeyPress="return is_string(this,event);"></textarea>
+											<textarea rows="3" wrap="off" spellcheck="false" maxlength="65536" class="span12" name="app_53" placeholder="消息内容" value="<% nvram_get_x("","app_53"); %>" onKeyPress="return is_string(this,event);"></textarea>
 											</td>
 										</tr>
 										<tr>

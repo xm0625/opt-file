@@ -625,3 +625,12 @@
 625丨3丨否)丨no）
 626丨2丨次丨Times次
 627丨2丨否丨no否
+628丨6丨不调整丨no Adjust
+629丨4丨调整丨Adjust
+630丨8丨最大空间丨max size
+631丨8丨镜像大小丨image size
+632丨8丨镜像路径丨image path
+633丨24丨修复SMB共享根目录只有8KB丨Fix SMB shared root directory only 8KB
+634丨4丨启用丨Enable
+635丨4丨服务丨service
+636丨4丨占内存丨Memory used
