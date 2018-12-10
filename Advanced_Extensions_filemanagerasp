@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--app5_ver=2017-10-22=-->
+<!--app5_ver=2018-12-10=-->
 <html>
 <head>
 <title><#Web_Title#> - 在线文件管理系统</title>
@@ -27,6 +27,7 @@ var $j = jQuery.noConflict();
 $j(document).ready(function() {
 
     init_itoggle('app_15',change_filemanager_enable);
+    init_itoggle('app_54',change_caddy_enable);
 
 });
 
@@ -38,6 +39,7 @@ function initial(){
     show_menu(8,<% nvram_get_x("", "filemanager_L2"); %>,<% nvram_get_x("", "filemanager_L3"); %>);
     show_footer();
     change_filemanager_enable(1);
+    change_caddy_enable(1);
 
 }
 
@@ -61,6 +63,13 @@ function change_filemanager_enable(mflag){
 	var m = document.form.app_15.value;
 	var is_filemanager_enable = (m == "1") ? "重启" : "更新";
 	document.form.updatefilemanager.value = is_filemanager_enable;
+}
+function change_caddy_enable(mflag){
+	var m = document.form.app_54.value;
+	var is_caddy_enable = (m == "1") ? 0 : 1;
+	showhide_div("app_5_script", is_caddy_enable);
+	var mm = document.form.app_54[0].checked;
+	showhide_div("app_11_script", mm);
 }
 function button_updatefilemanager(){
     change_filemanager_enable(1);
@@ -139,6 +148,7 @@ function button_filemanager_wan_port(){
                                     <div class="alert alert-info" style="margin: 10px;">欢迎使用 File Manager 【在线文件管理系统】基于GO的轻量级文件管理系统。指定的目录中提供文件管理界面，可用于上传，删除，预览，重命名和编辑文件。它允许创建多个用户，每个用户可以拥有自己的目录。它可以用作独立的应用程序或中间件。
                                     <div><a href="https://github.com/filebrowser/filebrowser" target="blank">项目地址: https://github.com/filebrowser/filebrowser</a></div>
                                     <div><a href="https://filebrowser.github.io/configuration/" target="blank">配置教程: https://filebrowser.github.io/configuration/</a></div>
+                                    <div><a href="https://filebrowser.github.io/configuration/" target="blank">caddy配置教程: https://filebrowser.github.io/caddy/</a></div>
                                     <div>备注：请用最新的浏览器。它适用于Chrome（移动设备），Firefox，Safari（Mac和移动设备）。</div>
                                     <div>当前 app 文件:【<% nvram_get_x("", "app5_ver"); %>】，最新 app 文件:【<% nvram_get_x("", "app5_ver_n"); %>】 </div>
                                     <span style="color:#FF0000;" class=""></span></div>
@@ -165,6 +175,20 @@ function button_filemanager_wan_port(){
                                             </td>
                                             <td colspan="1">
                                                 <span style="color:#888;">版本：<% nvram_get_x("","filemanager_v"); %></span>
+                                            </td>
+                                        </tr>
+                                        <tr id="caddy_enable_tr" >
+                                            <th width="30%" style="border-top: 0 none;">caddy 插件方式启动</th>
+                                            <td style="border-top: 0 none;" colspan="2">
+                                                    <div class="main_itoggle">
+                                                    <div id="app_54_on_of">
+                                                        <input type="checkbox" id="app_54_fake" <% nvram_match_x("", "app_54", "1", "value=1 checked"); %><% nvram_match_x("", "app_54", "0", "value=0"); %>  />
+                                                    </div>
+                                                </div>
+                                                <div style="position: absolute; margin-left: -10000px;">
+                                                    <input type="radio" value="1" name="app_54" id="app_54_1" class="input" value="1" onClick="change_caddy_enable(1);" <% nvram_match_x("", "app_54", "1", "checked"); %> /><#checkbox_Yes#>
+                                                    <input type="radio" value="0" name="app_54" id="app_54_0" class="input" value="0" onClick="change_caddy_enable(1);" <% nvram_match_x("", "app_54", "0", "checked"); %> /><#checkbox_No#>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -194,6 +218,14 @@ function button_filemanager_wan_port(){
                                                 <i class="icon-hand-right"></i> <a href="javascript:spoiler_toggle('script13')"><span>filemanager配置文件</span><div>&nbsp;<span style="color:#888;">查看以下文件修改 配置参数。</span></div></a>
                                                 <div id="script13" >
                                                     <textarea rows="10" wrap="off" spellcheck="false" maxlength="18192" class="span12" name="scripts.app_5.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.app_5.sh",""); %></textarea>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr id="app_11_script" colspan="4">
+                                            <td colspan="4" style="border-top: 0 none;">
+                                                <i class="icon-hand-right"></i> <a href="javascript:spoiler_toggle('script11')"><span>caddy配置文件</span><div>&nbsp;<span style="color:#888;">查看以下文件修改 配置参数。</span></div></a>
+                                                <div id="script11" >
+                                                    <textarea rows="10" wrap="off" spellcheck="false" maxlength="18192" class="span12" name="scripts.app_11.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.app_11.sh",""); %></textarea>
                                                 </div>
                                             </td>
                                         </tr>
