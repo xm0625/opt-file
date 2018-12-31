@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--app2_ver=2018-2-19=-->
+<!--app2_ver=2018-12-31=-->
 <html>
 <head>
 <title><#Web_Title#> - 假装在中国</title>
@@ -130,6 +130,8 @@ function button_updatefakeincn(){
                                 <div class="row-fluid">
                                     <div id="tabMenu" class="submenuBlock"></div>
                                     <div class="alert alert-info" style="margin: 10px;">欢迎使用 FakeInChina【假装在中国】 来解决在线视频的地区限制。
+									<div>提醒：本程序没有客服！没有客服！没有客服！</div>
+									<div><a href="https://github.com/gaocuo/fic" target="blank">项目地址: https://github.com/gaocuo/fic</a></div>
 									<div>当前 app 文件:【<% nvram_get_x("", "app2_ver"); %>】，最新 app 文件:【<% nvram_get_x("", "app2_ver_n"); %>】 </div>
 									<span style="color:#FF0000;" class=""></span></div>
 
@@ -158,13 +160,13 @@ function button_updatefakeincn(){
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th colspan="4" style="background-color: #E3E3E3;">说明和SS参数</th>
+                                            <th colspan="4" style="background-color: #E3E3E3;">app_1.sh说明和SS参数</th>
                                         </tr>
                                         <tr id="app_1_script" colspan="4">
                                             <td colspan="4" style="border-top: 0 none;">
                                                 <i class="icon-hand-right"></i> <a href="javascript:spoiler_toggle('script12')"><span>在这里配置SS参数和查看说明</span><div>&nbsp;<span style="color:#888;">查看以下文件修改 配置参数。</span></div></a>
                                                 <div id="script12" >
-                                                    <textarea rows="26" wrap="off" spellcheck="false" maxlength="18192" class="span12" name="scripts.app_1.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.app_1.sh",""); %></textarea>
+                                                    <textarea rows="23" wrap="off" spellcheck="false" maxlength="18192" class="span12" name="scripts.app_1.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.app_1.sh",""); %></textarea>
                                                 </div>
                                             </td>
                                         </tr> 
@@ -172,7 +174,15 @@ function button_updatefakeincn(){
                                             <td colspan="4" style="border-top: 0 none;">
                                                 <i class="icon-hand-right"></i> <a href="javascript:spoiler_toggle('script13')"><span>伪装表r.tocn.conf</span><div>&nbsp;<span style="color:#888;">查看以下文件修改 配置参数。</span></div></a>
                                                 <div id="script13" style="display:none;">
-                                                    <textarea rows="10" wrap="off" spellcheck="false" maxlength="18192" class="span12" name="scripts.app_2.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.app_2.sh",""); %></textarea>
+                                                    <textarea rows="8" wrap="off" spellcheck="false" maxlength="18192" class="span12" name="scripts.app_2.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.app_2.sh",""); %></textarea>
+                                                </div>
+                                            </td>
+                                        </tr> 
+                                        <tr id="app_12_script" colspan="4">
+                                            <td colspan="4" style="border-top: 0 none;">
+                                                <i class="icon-hand-right"></i> <a href="javascript:spoiler_toggle('script14')"><span>国内IP段的伪装表</span><div>&nbsp;<span style="color:#888;">查看以下文件修改 配置参数。</span></div></a>
+                                                <div id="script14" style="display:none;">
+                                                    <textarea rows="8" wrap="off" spellcheck="false" maxlength="18192" class="span12" name="scripts.app_12.sh" style="font-family:'Courier New'; font-size:12px;"><% nvram_dump("scripts.app_12.sh",""); %></textarea>
                                                 </div>
                                             </td>
                                         </tr> 
